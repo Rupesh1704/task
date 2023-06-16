@@ -29,6 +29,7 @@
                     echo"<div class= 'message'>
                     <p>This Email is registered. Please Login!</p>
                     </div> <br>";
+                    echo "<a href='index.php'><button class='btn'>Login Here</button>";
                 }
                 else{
                     mysqli_query($con, "INSERT INTO users (username, email, password, address, phone) VALUES ('$username', '$email', '$password', '$address', '$phone')") or die("Error Occurred");
